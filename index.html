@@ -46,7 +46,9 @@
     <div class="content">
         <br>
         
-    <h2>Hi There,<br/> I'm Arnob <span>Saha</span></h2>
+  <h2 id="hero-title"></h2>
+
+        
     <p>i am <span class="typing-text"></span></p>
     <a href="#about" class="btn"><span>About Me</span>
       <i class="fas fa-arrow-circle-down"></i>
@@ -380,6 +382,25 @@
 <script src="https://unpkg.com/scrollreveal"></script>
 
 <script
+    fetch('portfolio.json')
+  .then(res => res.json())
+  .then(data => {
+    // Hero section
+    document.getElementById('hero-title').textContent = data.hero.intro;
+    document.getElementById('hero-subtitle').textContent = data.hero.subtitle;
+    document.getElementById('hero-image').src = data.hero.profileImage;
+    const heroSocials = document.getElementById('hero-socials');
+    Object.entries(data.hero.socials).forEach(([key, value]) => {
+      heroSocials.innerHTML += `<li><a class="${key}" href="${value}" target="_blank"><i class="fab fa-${key}"></i></a></li>`;
+    });
+
+        .catch(error => {
+        // Show error message if loading fails
+        document.getElementById('title').textContent = 'Error loading data';
+        console.error('Failed to load portfolio.json:', error);
+      });
+
+      
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
