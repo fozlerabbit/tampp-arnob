@@ -85,7 +85,7 @@
     <div class="content">
 
       
-       <h3 id="about-name"></h3>
+       <h3 id="tname"></h3>
         <h3>I'm Arnob</h3>
         <span class="tag">Undergraduate Student | Researcher | Host | Volunteer</span>
         
@@ -104,7 +104,7 @@
             <div class="box">
               <p><span> email : </span> arnobsahahsc2020@gmail.com</p>
               <p><span> place : </span> Mymensingh, Bangladesh</p>
-              <p><strong>Phone:</strong> <span id="about-phone"></span></p>
+              <p>Phone : <span id="ttitle"></span></p>
             </div>
         </div>
         
@@ -402,53 +402,24 @@
   
 
 
-    <script>
-    fetch('portfolio.json')
-      .then(res => res.json())
+  <!-- JavaScript to fetch and display data from j7.json -->
+  <script>
+    // Fetch the JSON file
+    fetch('j7.json')
+      .then(response => response.json()) // Convert response to JSON
       .then(data => {
-        document.getElementById('logo-name').textContent = data.person.name;
-        document.getElementById('hero-intro').textContent = `Hi, I'm ${data.person.name}`;
-        document.getElementById('hero-subtitle').textContent = data.person.jobTitle;
-        document.getElementById('hero-image').src = data.person.profileImage;
-
-        const socialList = document.getElementById('hero-socials');
-        Object.entries(data.person.socials).forEach(([platform, link]) => {
-          const li = document.createElement('li');
-          li.innerHTML = `<a href="${link}" target="_blank"><i class="fab fa-${platform}"></i></a>`;
-          socialList.appendChild(li);
-        });
-
-        document.getElementById('about-name').textContent = data.about.headline;
-        document.getElementById('about-tag').textContent = data.about.tagline;
-        document.getElementById('about-bio').textContent = data.about.bio;
-        document.getElementById('about-phone').textContent = data.person.phone;
-        document.getElementById('about-email').textContent = data.person.email;
-        document.getElementById('about-location').textContent = data.person.location;
-        document.getElementById('about-resume').href = data.person.resumeLink;
-
-        const eduContainer = document.getElementById('education-container');
-        data.education.forEach(item => {
-          const div = document.createElement('div');
-          div.innerHTML = `
-            <h3>${item.title}</h3>
-            <p>${item.institution}</p>
-            <p>${item.status}</p>
-            <img src="${item.image}" alt="${item.title}" width="100" />
-          `;
-          eduContainer.appendChild(div);
-        });
-
-        const expContainer = document.getElementById('experience-container');
-        data.experience.forEach(item => {
-          const div = document.createElement('div');
-          div.innerHTML = `<strong>${item.organisation}</strong> — ${item.role} (${item.period})`;
-          expContainer.appendChild(div);
-        });
-
-        document.getElementById('projects-link').href = data.projects.buttonLink;
-
-        document.getElementById('footer-message').textContent = data.footer.thankYouMessage;
-        document.getElementById('footer-credits').textContent = data.footer.credits;
+        // Insert values into HTML elements using their IDs
+        document.getElementById('ttitle').textContent = data.title;
+        document.getElementById('tname').textContent = data.name;
+        document.getElementById('tschool').textContent = data.school;
+        document.getElementById('tcollege').textContent = data.college;
+        document.getElementById('tclass').textContent = data.class;
+        document.getElementById('tdescription').textContent = data.description;
+      })
+      .catch(error => {
+        // Show error message if loading fails
+        document.getElementById('title').textContent = 'Error loading data';
+        console.error('Failed to load j7.json:', error);
       });
   </script>
 
