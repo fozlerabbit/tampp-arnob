@@ -15,9 +15,11 @@
     }
   },
   "about": {
+    "name" : "rabbbiii",
     "headline": "I'm Arnob",
     "tagline": "Undergraduate Student | Researcher | Host | Volunteer",
-    "bio": "I am passionate for meaningful communication, scientific advancement, and community impact — these things really motivate me. I am inspired to contribute to cutting-edge research that connects lab science with practical health solutions because I have a strong interest in infectious diseases, public health, oncology, and molecular biology. Outside of the lab, I enjoy interacting with people, whether it's by organizing events, giving speeches in front of an audience, or working on charitable projects. Curiosity, perseverance, and a desire to significantly impact the scientific and societal domains have all influenced my path. From planning events to conducting research, every experience strengthens my resolve to develop, lead, and serve with meaning."
+    "bio": "I am passionate for meaningful communicationonnects lnts, giving speeches in frontave all influenced my path. From planning events to conducting research, every experience strengthens my resolve to develop, lead, and serve with meaning.",
+     "phone" : "1422552525"
   },
   "education": [
     {
