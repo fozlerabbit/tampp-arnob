@@ -1,23 +1,13 @@
 {
-  "meta": {
-    "title": "Portfolio | Arnob Saha",
-    "description": "Welcome to Arnob's Portfolio.",
-    "keywords": [
-      "Arnob Saha",
-      "portfolio",
-      "Arnob",
-      "personal portfolio",
-      "scriptysphere",
-      "portfolio design",
-      "portfolio website"
-    ],
-    "favicon": "./assets/images/favicon.png"
-  },
-  "hero": {
+  "person": {
     "name": "Arnob Saha",
-    "intro": "Hi There, I'm Rabbi",
-    "subtitle": "i am a researcher, student and volunteer",
+    "alternateName": "Arnob",
+    "jobTitle": "Undergraduate Student | Researcher | Host | Volunteer",
     "profileImage": "./assets/images/Profile2.jpg",
+    "phone": "+8801997-804955",
+    "email": "arnobsahahsc2020@gmail.com",
+    "location": "Mymensingh, Bangladesh",
+    "resumeLink": "https://drive.google.com/file/d/1X0voz8GpQHwoNB0EBmvclZpSJyaszhpx/view?usp=drivesdkF",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/arnob-saha-7b184a239/",
       "facebook": "https://facebook.com/arnob.saha.126751",
@@ -25,86 +15,61 @@
     }
   },
   "about": {
-    "tag": "Undergraduate Student | Researcher | Host | Volunteer",
-    "description": "I am passionate for meaningful communication, scientific advancement, and community impact these things really motivates me. I am inspired to contribute to cutting-edge research that connects lab science with practical health solutions because I have a strong interest in infectious diseases, public health, oncology, and molecular biology. Outside of the lab, I enjoy interacting with people, whether it's by organizing events, giving speeches in front of an audience, or working on charitable projects. Curiosity, perseverance, and a desire to significantly impact the scientific and societal domains have all influenced my path. From planning events to conducting research, every experience strengthens my resolve to develop, lead, and serve with meaning.",
-    "age": "18+",
-    "phone": "+8801997-804955",
-    "email": "arnobsahahsc2020@gmail.com",
-    "location": "Mymensingh, Bangladesh",
-    "resumeLink": "https://drive.google.com/file/d/1X0voz8GpQHwoNB0EBmvclZpSJyaszhpx/view?usp=drivesdkF"
+    "headline": "I'm Arnob",
+    "tagline": "Undergraduate Student | Researcher | Host | Volunteer",
+    "bio": "I am passionate for meaningful communication, scientific advancement, and community impact — these things really motivate me. I am inspired to contribute to cutting-edge research that connects lab science with practical health solutions because I have a strong interest in infectious diseases, public health, oncology, and molecular biology. Outside of the lab, I enjoy interacting with people, whether it's by organizing events, giving speeches in front of an audience, or working on charitable projects. Curiosity, perseverance, and a desire to significantly impact the scientific and societal domains have all influenced my path. From planning events to conducting research, every experience strengthens my resolve to develop, lead, and serve with meaning."
   },
-  "skills": {
-    "note": "Skills can be loaded dynamically from JavaScript if needed"
-  },
-  "education": {
-    "items": [
-      {
-        "title": "University | Faculty of veterinary Science",
-        "institute": "Bangladesh Agricultural university | BAU",
-        "status": "Studying",
-        "image": "./assets/images/educat/uni.jpg"
-      },
-      {
-        "title": "HSC | Science",
-        "institute": "Gurudayal Govt College | GGC",
-        "status": "GPA 5.0 out of 5.0 | Completed",
-        "image": "./assets/images/educat/collegee.jpg"
-      }
-    ]
-  },
+  "education": [
+    {
+      "title": "University | Faculty of veterinary Science",
+      "institution": "Bangladesh Agricultural university | BAU",
+      "status": "Studying",
+      "image": "./assets/images/educat/uni.jpg"
+    },
+    {
+      "title": "HSC | Science",
+      "institution": "Gurudayal Govt College | GGC",
+      "status": "GPA 5.0 out of 5.0 | Completed",
+      "image": "./assets/images/educat/collegee.jpg"
+    }
+  ],
+  "experience": [
+    {
+      "organisation": "ScriptySphere",
+      "role": "Full Stack Developer",
+      "period": "Oct 2019 - present"
+    },
+    {
+      "organisation": "Volunteer for Bangladesh (VBD)",
+      "role": "General Member | HRO Member",
+      "period": "2023 - Present"
+    },
+    {
+      "organisation": "Bangladesh Scout",
+      "role": "Rover | ARM",
+      "period": "Jan 2017 - Present"
+    },
+    {
+      "organisation": "Swapna Bunon Foundation Bangladesh",
+      "role": "Teacher | Internship",
+      "period": "April 2023 - Present"
+    },
+    {
+      "organisation": "Prothom Alo Bondhushava",
+      "role": "Notun Bondhu",
+      "period": "April 2023 - Present"
+    },
+    {
+      "organisation": "Rapid Response Bangladesh | Animal Rescue Bangladesh",
+      "role": "Former Co-Director",
+      "period": "March 2024 - April 2025"
+    }
+  ],
   "projects": {
     "buttonLink": "https://www.researchgate.net/profile/Arnob-Saha-8"
   },
-  "experience": {
-    "timeline": [
-      {
-        "organisation": "ScriptySphere",
-        "role": "Full Stack Developer",
-        "period": "Oct 2019 - present"
-      },
-      {
-        "organisation": "Volunteer for Bangladesh (VBD)",
-        "role": "General Member | HRO Member",
-        "period": "2023 - Present"
-      },
-      {
-        "organisation": "Bangladesh Scout",
-        "role": "Rover | ARM",
-        "period": "Jan 2017 - Present"
-      },
-      {
-        "organisation": "Swapna Bunon Foundation Bangladesh",
-        "role": "Teacher | Internship",
-        "period": "April 2023 - Present"
-      },
-      {
-        "organisation": "Prothom Alo Bondhushava",
-        "role": "Notun Bondhu",
-        "period": "April 2023 - Present"
-      },
-      {
-        "organisation": "Rapid Response Bangladesh | Animal Rescue Bangladesh",
-        "role": "Former Co-Director",
-        "period": "March 2024 - April 2025"
-      }
-    ]
-  },
-  "contact": {
-    "contactImage": "./assets/images/contact1.png"
-  },
   "footer": {
-    "description": "Thank you for visiting my personal portfolio website. Connect with me over socials. Keep Rising 🚀. Connect with me over live chat!",
-    "contact": {
-      "phone": "+8801997-804955",
-      "email": "arnobsahahsc2020@gmail.com",
-      "location": "Mymensingh, Bangladesh"
-    },
-    "socials": {
-      "linkedin": "https://www.linkedin.com/in/arnob-saha-7b184a239",
-      "facebook": "https://facebook.com/arnob.saha.126751",
-      "email": "mailto:arnobsahahsc2020@gmail.com",
-      "instagram": "https://www.instagram.com/_arnob_saha"
-    },
+    "thankYouMessage": "Thank you for visiting my personal portfolio website. Connect with me over socials. Keep Rising 🚀. Connect with me over live chat!",
     "credits": "Designed with ❤️ by Fozle Rabbi"
   }
 }
